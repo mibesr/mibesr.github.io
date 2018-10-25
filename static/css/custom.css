@@ -1,0 +1,15 @@
+/* Custom CSS */
+
+/* don't duplicate name in sidebar */
+/* .widget-about .site-title {
+    display: none;
+} */
+
+.site-header .header-info {
+    display: none;
+}
+
+/* custom width of page */
+.container {
+    max-width: 740px;
+}

@@ -1,5 +1,16 @@
+[about]
+title = ""
+description = ""
+logo = "/images/logo.png"
+
 # Taxonomy Cloud Widget config
 [taxonomy_cloud]
 title = ""                            # default: Plural Name for `taxonomyCloud.taxonomy`
 taxonomy = "tags"                     # default: "tags"
+shuffle = false                       # default: true
+
+# Taxonomy Cloud Widget config
+[category_taxonomy_cloud]
+title = ""                            # default: Plural Name for `taxonomyCloud.taxonomy`
+taxonomy = "categories"               # default: "tags"
 shuffle = false                       # default: true
