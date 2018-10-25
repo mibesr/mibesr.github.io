@@ -2,6 +2,7 @@
 title: "Blog = Hugo + Github Pages + Travis"
 date: 2018-10-23T14:04:27+08:00
 toc: true
+adsense: true
 categories:
     - Tech
 tags:
