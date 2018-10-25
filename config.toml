@@ -70,15 +70,15 @@ page = "" # Twitter page username
 titleSeparator = "•"
 
 [params.social]
-# codepen = "MunifTanjim"
+# codepen = "socialname"
 # email = "contact@example.com"
-facebook = "fjsllr"
+# facebook = "socialname"
 github = "mibesr"
-gitlab = "mibesr"
-# instagram = "MunifTanjim"
-linkedin = "fjsllr"
-twitter = "fjsllr"
-# telegram = "MunifTanjim"
+# gitlab = "socialname"
+# instagram = "socialname"
+# linkedin = "socialname"
+twitter = "mibesr"
+# telegram = "socialname"
 # google_scholar = "qc6CJjYAAAAJ"
 # youtube = "UCT-U0rNerYxItGcuoPX-WYA"
 
