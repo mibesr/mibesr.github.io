@@ -35,7 +35,7 @@ gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 prefix = "Copyright"
 holder = "Mibesr"
 startYear = "2018"
-suffix = "| Powered by hugo([minimo](https://github.com/MunifTanjim/minimo))"
+suffix = "Powered by Hugo"
 
 [params.settings]
 # date & time format: https://golang.org/pkg/time/
@@ -131,11 +131,11 @@ tag = "tags"
 [permalinks]
 page = "/:slug/"
 
-[[menu.main]]
-name = "GitHub"
-weight = -220
-identifier = "repository"
-url = "https://github.com/Mibesr"
+# [[menu.main]]
+# name = "GitHub"
+# weight = -220
+# identifier = "repository"
+# url = "https://github.com/Mibesr"
 
 [blackfriday]
 hrefTargetBlank = true
