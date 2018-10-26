@@ -22,13 +22,9 @@ sudo vi /etc/update-manager/release-upgrades
 
 将 `Prompt` 的值修改为 `normal`
 
-```
-Prompt=normal
-```
-
 3. 开始升级版本
 
-```
+```bash
 sudo do-release-upgrade -d
 ```
 
