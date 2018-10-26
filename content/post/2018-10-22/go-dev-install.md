@@ -3,6 +3,7 @@ title: "Go 开发环境配置"
 date: 2018-10-22T19:18:22+08:00
 toc: true
 comments: true
+adsense: true
 categories:
     - Tech
 tags: 
