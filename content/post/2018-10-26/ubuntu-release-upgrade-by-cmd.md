@@ -8,13 +8,13 @@ tags:
     - Ubuntu
 ---
 
-1. 安装 update-manager-core
+##### 1. 安装 update-manager-core
 
 ```bash
 sudo apt install update-manager-core
 ```
 
-2. 修改升级通知配置
+##### 2. 修改升级通知配置
 
 ```bash
 sudo vi /etc/update-manager/release-upgrades
@@ -22,9 +22,9 @@ sudo vi /etc/update-manager/release-upgrades
 
 将 `Prompt` 的值修改为 `normal`
 
-3. 开始升级版本
+##### 3. 开始升级版本
 
-```bash
+```console
 sudo do-release-upgrade -d
 ```
 
