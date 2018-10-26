@@ -96,7 +96,7 @@ deploy:
 
 ```bash
 git add -A
-git commint -m "custom comment"
+git commit -m "custom comment"
 git push -u origin master:develop
 ```
 
