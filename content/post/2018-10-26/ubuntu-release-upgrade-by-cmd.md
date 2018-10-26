@@ -5,7 +5,7 @@ adsense: true
 categories:
     - Tech
 tags:
-    - ubuntu
+    - Ubuntu
 ---
 
 1. 安装 update-manager-core
