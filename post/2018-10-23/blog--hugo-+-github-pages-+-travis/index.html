@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='安装 Hugo ## ubuntu sudo apt-get install hugo ## windows choco install hugo -confirm ## macos brew install hugo 初始化及安装主题 ## 新建站点 hugo new site blog ## 安装主题 cd blog git init git submodule add https://github.com/MunifTanjim/minimo themes/minimo ## Configuration for Minimo cp themes/minimo/exampleSite/config.toml . p.s. 主题不同，请参考对应主题的安装和配置说明
+部署到 GitHub pages 创建 &lt;username&gt;.github.io 仓库  在 github 上注册账号并新建仓库：&lt;username&gt;.github.io 在 config.toml 中的 baseURL 设置为 https://&lt;username&gt;.github.io  提交代码到仓库的 develop 分支 ## 忽略本地生成的 public 文件夹 echo &#34;public&#34; &gt;&gt; .'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Blog = Hugo &#43; Github Pages &#43; Travis • mibesr'>
+<meta property='og:description' content='安装 Hugo ## ubuntu sudo apt-get install hugo ## windows choco install hugo -confirm ## macos brew install hugo 初始化及安装主题 ## 新建站点 hugo new site blog ## 安装主题 cd blog git init git submodule add https://github.com/MunifTanjim/minimo themes/minimo ## Configuration for Minimo cp themes/minimo/exampleSite/config.toml . p.s. 主题不同，请参考对应主题的安装和配置说明
+部署到 GitHub pages 创建 &lt;username&gt;.github.io 仓库  在 github 上注册账号并新建仓库：&lt;username&gt;.github.io 在 config.toml 中的 baseURL 设置为 https://&lt;username&gt;.github.io  提交代码到仓库的 develop 分支 ## 忽略本地生成的 public 文件夹 echo &#34;public&#34; &gt;&gt; .'>
+<meta property='og:url' content='https://mibesr.github.io/post/2018-10-23/blog--hugo-&#43;-github-pages-&#43;-travis/'>
+<meta property='og:site_name' content='mibesr'>
+<meta property='og:type' content='article'><meta property='article:section' content='post'><meta property='article:tag' content='Hugo'><meta property='article:tag' content='Travis'><meta property='article:tag' content='Github'><meta property='article:published_time' content='2018-10-23T14:04:27&#43;08:00'/><meta property='article:modified_time' content='2018-10-23T14:04:27&#43;08:00'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.49.2" />
+
+  <title>Blog = Hugo &#43; Github Pages &#43; Travis • mibesr</title>
+  <link rel='canonical' href='https://mibesr.github.io/post/2018-10-23/blog--hugo-&#43;-github-pages-&#43;-travis/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.4267b3fa.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-128068076-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6266384262623754",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+</head>
+
+
+<body class='page type-post has-sidebar'>
+
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    mibesr
+    </h2>
+    <div class='desc'>
+    My Blog / About Tech, LifeStyle
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'>Search</span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='Search&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/tags/github/' style='font-size:1em'>Github</a>
+      </li><li>
+        <a href='/tags/go/' style='font-size:2em'>Go</a>
+      </li><li>
+        <a href='/tags/hugo/' style='font-size:1em'>Hugo</a>
+      </li><li>
+        <a href='/tags/travis/' style='font-size:1em'>Travis</a>
+      </li><li>
+        <a href='/tags/ubuntu/' style='font-size:1em'>Ubuntu</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/post/'>Post</a>
+      </li><li class='item'>
+        <a href='/project/'>Project</a>
+      </li><li class='item'>
+        <a href='/about/'>About</a>
+      </li></ul>
+  </div>
+</nav>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>mibesr</p><p class='desc site-desc'>My Blog / About Tech, LifeStyle</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Blog = Hugo &#43; Github Pages &#43; Travis</h1>
+      
+
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-10-23T14:04:27&#43;08:00'>2018, Oct 23</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+One min read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+<details class='container entry-toc'>
+  <summary class='title'>
+    <span>Table of Contents</span>
+  </summary>
+  <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#安装-hugo">安装 Hugo</a></li>
+<li><a href="#初始化及安装主题">初始化及安装主题</a></li>
+<li><a href="#部署到-github-pages">部署到 GitHub pages</a>
+<ul>
+<li><a href="#创建-username-github-io-仓库">创建 <code>&lt;username&gt;.github.io</code> 仓库</a></li>
+<li><a href="#提交代码到仓库的-develop-分支">提交代码到仓库的 develop 分支</a></li>
+<li><a href="#使用-travis-自动发布页面到-master-分支">使用 Travis 自动发布页面到 master 分支</a></li>
+</ul></li>
+<li><a href="#日常更新操作">日常更新操作</a></li>
+<li><a href="#参考">参考</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+
+
+  <div class='container entry-content'>
+  
+
+<h2 id="安装-hugo">安装 Hugo</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">## ubuntu
+</span><span style="color:#75715e"></span>sudo apt-get install hugo
+
+<span style="color:#75715e">## windows
+</span><span style="color:#75715e"></span>choco install hugo -confirm
+
+<span style="color:#75715e">## macos
+</span><span style="color:#75715e"></span>brew install hugo</code></pre></div>
+<h2 id="初始化及安装主题">初始化及安装主题</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">## 新建站点
+</span><span style="color:#75715e"></span>hugo new site blog
+
+<span style="color:#75715e">## 安装主题
+</span><span style="color:#75715e"></span>cd blog
+git init
+git submodule add https://github.com/MunifTanjim/minimo themes/minimo
+
+<span style="color:#75715e">## Configuration for Minimo
+</span><span style="color:#75715e"></span>cp themes/minimo/exampleSite/config.toml .</code></pre></div>
+<p>p.s. 主题不同，请参考对应主题的安装和配置说明</p>
+
+<h2 id="部署到-github-pages">部署到 GitHub pages</h2>
+
+<h3 id="创建-username-github-io-仓库">创建 <code>&lt;username&gt;.github.io</code> 仓库</h3>
+
+<ul>
+<li>在 github 上注册账号并<a href="https://github.com/new" target="_blank">新建</a>仓库：<code>&lt;username&gt;.github.io</code></li>
+<li>在 <code>config.toml</code> 中的 <code>baseURL</code> 设置为 <code>https://&lt;username&gt;.github.io</code></li>
+</ul>
+
+<h3 id="提交代码到仓库的-develop-分支">提交代码到仓库的 develop 分支</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">## 忽略本地生成的 public 文件夹
+</span><span style="color:#75715e"></span>echo <span style="color:#e6db74">&#34;public&#34;</span> &gt;&gt; .gitignore
+
+<span style="color:#75715e">## 提交代码
+</span><span style="color:#75715e"></span>git add -A
+git commit -m <span style="color:#e6db74">&#34;initial commit&#34;</span>
+git remote add origin https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git
+git push -u origin master:develop</code></pre></div>
+<h3 id="使用-travis-自动发布页面到-master-分支">使用 Travis 自动发布页面到 master 分支</h3>
+
+<ul>
+<li>生成 <a href="https://github.com/settings/tokens/new" target="_blank">Github Access Token</a>，勾选 public_repo 的权限</li>
+<li>到 <a href="https://travis-ci.org/" target="_blank">Travis</a> 关联 Github，并<a href="https://travis-ci.org/account/repositories" target="_blank">激活</a> <code>&lt;username&gt;.github.io</code> 仓库的自动部署功能</li>
+<li>在 Travis 的 <code>&lt;username&gt;.github.io</code> 仓库配置页中，把生成的 <code>Github Access Token</code> 添加到环境变量 <code>GITHUB_TOKEN</code></li>
+<li>在仓库中添加 <code>.travis.yml</code> 配置文件，并 commit 到仓库</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">language: go
+branches:
+  only:
+    - develop
+install: go get -v github.com/gohugoio/hugo
+script: 
+  - hugo
+deploy:
+  provider: pages
+  skip_cleanup: <span style="color:#66d9ef">true</span>
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  target_branch: master
+  on:
+    branch: develop</code></pre></div>
+<ul>
+<li>在 Travis 手动触发一次仓库 develop 分支的 build 测试效果</li>
+<li>浏览 <code>https://&lt;username&gt;.github.io</code></li>
+</ul>
+
+<h2 id="日常更新操作">日常更新操作</h2>
+
+<ol>
+<li>更新文章或者配置</li>
+<li>提交代码到仓库</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add -A
+git commit -m <span style="color:#e6db74">&#34;custom comment&#34;</span>
+git push -u origin master:develop</code></pre></div>
+<ol>
+<li>等待 Travis 发布完成</li>
+<li>浏览 <code>https://&lt;username&gt;.github.io</code> 并验证更新</li>
+</ol>
+
+<h2 id="参考">参考</h2>
+
+<ul>
+<li><a href="https://powersj.io/post/github-hugo/" target="_blank">https://powersj.io/post/github-hugo/</a></li>
+<li><a href="https://f4ww4z.me/posts/set-up-hugo/" target="_blank">https://f4ww4z.me/posts/set-up-hugo/</a></li>
+<li><a href="https://segmentfault.com/a/1190000012975914" target="_blank">https://segmentfault.com/a/1190000012975914</a></li>
+<li><a href="http://note.qidong.name/2017/07/05/google-analytics-in-hugo/" target="_blank">http://note.qidong.name/2017/07/05/google-analytics-in-hugo/</a></li>
+</ul>
+
+</div>
+
+  
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/tech/'>Tech</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/hugo/'>Hugo</a>, <a class='tag' href='/tags/travis/'>Travis</a>, <a class='tag' href='/tags/github/'>Github</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/post/2018-10-22/go-dev-install/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Go 开发环境配置</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/post/2018-10-23/go-version-management/'>
+        <span class='screen-reader-text'>Next post: </span>Go 版本管理<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+<section id='comments' class='comments'>
+  <div class='container sep-before'>
+    <div class='comments-area'><script src='https://utteranc.es/client.js'
+  repo='mibesr/mibesr.github.io' issue-term='pathname'
+  crossorigin='anonymous' async>
+</script>
+</div>
+  </div>
+</section>
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/mibesr' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/mibesr' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p>Copyright &copy; 2018 Mibesr Powered by Hugo</p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.59f76c44.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

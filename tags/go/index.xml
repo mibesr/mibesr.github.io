@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on mibesr</title>
+    <link>https://mibesr.github.io/tags/go/</link>
+    <description>Recent content in Go on mibesr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 23 Oct 2018 17:27:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://mibesr.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go 版本管理</title>
+      <link>https://mibesr.github.io/post/2018-10-23/go-version-management/</link>
+      <pubDate>Tue, 23 Oct 2018 17:27:11 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/post/2018-10-23/go-version-management/</guid>
+      <description> 目前 Go 语言主要有两个版本管理工具，用于多版本的安装。
+实现的原理是通过修改 GOROOT 环境变量达到切换 Go 语言编译环境的目的。
+gimme  https://github.com/travis-ci/gimme
+ gvm  https://github.com/moovweb/gvm
+ </description>
+    </item>
+    
+    <item>
+      <title>Go 开发环境配置</title>
+      <link>https://mibesr.github.io/post/2018-10-22/go-dev-install/</link>
+      <pubDate>Mon, 22 Oct 2018 19:18:22 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/post/2018-10-22/go-dev-install/</guid>
+      <description>Windows choco install golang jetbrainstoolbox vscode  https://chocolatey.org/
+ MacOS brew install go brew cask install jetbrains-toolbox visual-studio-code  https://brew.sh/ http://caskroom.io/
+ p.s. 通过 Jetbrains Toolbox 安装 GoLand。</description>
+    </item>
+    
+  </channel>
+</rss>

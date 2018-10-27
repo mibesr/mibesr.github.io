@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on mibesr</title>
+    <link>https://mibesr.github.io/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on mibesr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 26 Oct 2018 16:25:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://mibesr.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu 纯命令行版本升级</title>
+      <link>https://mibesr.github.io/post/2018-10-26/ubuntu-release-upgrade-by-cmd/</link>
+      <pubDate>Fri, 26 Oct 2018 16:25:11 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/post/2018-10-26/ubuntu-release-upgrade-by-cmd/</guid>
+      <description>1. 安装 update-manager-core sudo apt install update-manager-core 2. 修改升级通知配置 sudo vi /etc/update-manager/release-upgrades 将 Prompt 的值修改为 normal
+3. 开始升级版本 sudo do-release-upgrade -d 之后，会有一些引导，基本不用管，输入 y， 开始升级。
+注意：一旦开始升级，中间不能中断，否则，系统大概率会出现问题。</description>
+    </item>
+    
+  </channel>
+</rss>

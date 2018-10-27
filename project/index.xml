@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project on mibesr</title>
+    <link>https://mibesr.github.io/project/</link>
+    <description>Recent content in Project on mibesr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 22 Oct 2018 17:53:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://mibesr.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GoVM</title>
+      <link>https://mibesr.github.io/project/govm/</link>
+      <pubDate>Mon, 22 Oct 2018 17:53:10 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/project/govm/</guid>
+      <description> TODO </description>
+    </item>
+    
+    <item>
+      <title>GoHosts</title>
+      <link>https://mibesr.github.io/project/gohosts/</link>
+      <pubDate>Mon, 22 Oct 2018 17:36:07 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/project/gohosts/</guid>
+      <description> TODO </description>
+    </item>
+    
+  </channel>
+</rss>

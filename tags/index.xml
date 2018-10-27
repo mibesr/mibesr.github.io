@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on mibesr</title>
+    <link>https://mibesr.github.io/tags/</link>
+    <description>Recent content in Tags on mibesr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 23 Oct 2018 14:04:27 +0800</lastBuildDate>
+    
+	<atom:link href="https://mibesr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Github</title>
+      <link>https://mibesr.github.io/tags/github/</link>
+      <pubDate>Tue, 23 Oct 2018 14:04:27 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://mibesr.github.io/tags/go/</link>
+      <pubDate>Tue, 23 Oct 2018 17:27:11 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://mibesr.github.io/tags/hugo/</link>
+      <pubDate>Tue, 23 Oct 2018 14:04:27 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travis</title>
+      <link>https://mibesr.github.io/tags/travis/</link>
+      <pubDate>Tue, 23 Oct 2018 14:04:27 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/tags/travis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://mibesr.github.io/tags/ubuntu/</link>
+      <pubDate>Fri, 26 Oct 2018 16:25:11 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

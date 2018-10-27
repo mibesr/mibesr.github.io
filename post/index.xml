@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post on mibesr</title>
+    <link>https://mibesr.github.io/post/</link>
+    <description>Recent content in Post on mibesr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 26 Oct 2018 16:25:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://mibesr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu 纯命令行版本升级</title>
+      <link>https://mibesr.github.io/post/2018-10-26/ubuntu-release-upgrade-by-cmd/</link>
+      <pubDate>Fri, 26 Oct 2018 16:25:11 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/post/2018-10-26/ubuntu-release-upgrade-by-cmd/</guid>
+      <description>1. 安装 update-manager-core sudo apt install update-manager-core 2. 修改升级通知配置 sudo vi /etc/update-manager/release-upgrades 将 Prompt 的值修改为 normal
+3. 开始升级版本 sudo do-release-upgrade -d 之后，会有一些引导，基本不用管，输入 y， 开始升级。
+注意：一旦开始升级，中间不能中断，否则，系统大概率会出现问题。</description>
+    </item>
+    
+    <item>
+      <title>评论测试</title>
+      <link>https://mibesr.github.io/post/2018-10-26/comment-test/</link>
+      <pubDate>Fri, 26 Oct 2018 10:33:43 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/post/2018-10-26/comment-test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go 版本管理</title>
+      <link>https://mibesr.github.io/post/2018-10-23/go-version-management/</link>
+      <pubDate>Tue, 23 Oct 2018 17:27:11 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/post/2018-10-23/go-version-management/</guid>
+      <description> 目前 Go 语言主要有两个版本管理工具，用于多版本的安装。
+实现的原理是通过修改 GOROOT 环境变量达到切换 Go 语言编译环境的目的。
+gimme  https://github.com/travis-ci/gimme
+ gvm  https://github.com/moovweb/gvm
+ </description>
+    </item>
+    
+    <item>
+      <title>Blog = Hugo &#43; Github Pages &#43; Travis</title>
+      <link>https://mibesr.github.io/post/2018-10-23/blog--hugo-&#43;-github-pages-&#43;-travis/</link>
+      <pubDate>Tue, 23 Oct 2018 14:04:27 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/post/2018-10-23/blog--hugo-&#43;-github-pages-&#43;-travis/</guid>
+      <description>安装 Hugo ## ubuntu sudo apt-get install hugo ## windows choco install hugo -confirm ## macos brew install hugo 初始化及安装主题 ## 新建站点 hugo new site blog ## 安装主题 cd blog git init git submodule add https://github.com/MunifTanjim/minimo themes/minimo ## Configuration for Minimo cp themes/minimo/exampleSite/config.toml . p.s. 主题不同，请参考对应主题的安装和配置说明
+部署到 GitHub pages 创建 &amp;lt;username&amp;gt;.github.io 仓库  在 github 上注册账号并新建仓库：&amp;lt;username&amp;gt;.github.io 在 config.toml 中的 baseURL 设置为 https://&amp;lt;username&amp;gt;.github.io  提交代码到仓库的 develop 分支 ## 忽略本地生成的 public 文件夹 echo &amp;#34;public&amp;#34; &amp;gt;&amp;gt; .</description>
+    </item>
+    
+    <item>
+      <title>Go 开发环境配置</title>
+      <link>https://mibesr.github.io/post/2018-10-22/go-dev-install/</link>
+      <pubDate>Mon, 22 Oct 2018 19:18:22 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/post/2018-10-22/go-dev-install/</guid>
+      <description>Windows choco install golang jetbrainstoolbox vscode  https://chocolatey.org/
+ MacOS brew install go brew cask install jetbrains-toolbox visual-studio-code  https://brew.sh/ http://caskroom.io/
+ p.s. 通过 Jetbrains Toolbox 安装 GoLand。</description>
+    </item>
+    
+    <item>
+      <title>突然想写点儿什么</title>
+      <link>https://mibesr.github.io/post/2018-10-22/want-to-write-something/</link>
+      <pubDate>Mon, 22 Oct 2018 16:21:14 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/post/2018-10-22/want-to-write-something/</guid>
+      <description>突然想写点儿什么，记录一些自己的生活、学习以及想法。</description>
+    </item>
+    
+  </channel>
+</rss>

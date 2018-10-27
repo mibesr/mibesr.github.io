@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on mibesr</title>
+    <link>https://mibesr.github.io/tags/github/</link>
+    <description>Recent content in Github on mibesr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 23 Oct 2018 14:04:27 +0800</lastBuildDate>
+    
+	<atom:link href="https://mibesr.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog = Hugo &#43; Github Pages &#43; Travis</title>
+      <link>https://mibesr.github.io/post/2018-10-23/blog--hugo-&#43;-github-pages-&#43;-travis/</link>
+      <pubDate>Tue, 23 Oct 2018 14:04:27 +0800</pubDate>
+      
+      <guid>https://mibesr.github.io/post/2018-10-23/blog--hugo-&#43;-github-pages-&#43;-travis/</guid>
+      <description>安装 Hugo ## ubuntu sudo apt-get install hugo ## windows choco install hugo -confirm ## macos brew install hugo 初始化及安装主题 ## 新建站点 hugo new site blog ## 安装主题 cd blog git init git submodule add https://github.com/MunifTanjim/minimo themes/minimo ## Configuration for Minimo cp themes/minimo/exampleSite/config.toml . p.s. 主题不同，请参考对应主题的安装和配置说明
+部署到 GitHub pages 创建 &amp;lt;username&amp;gt;.github.io 仓库  在 github 上注册账号并新建仓库：&amp;lt;username&amp;gt;.github.io 在 config.toml 中的 baseURL 设置为 https://&amp;lt;username&amp;gt;.github.io  提交代码到仓库的 develop 分支 ## 忽略本地生成的 public 文件夹 echo &amp;#34;public&amp;#34; &amp;gt;&amp;gt; .</description>
+    </item>
+    
+  </channel>
+</rss>
